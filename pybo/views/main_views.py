@@ -3,9 +3,11 @@ from werkzeug.utils import redirect
 
 bp = Blueprint('main', __name__, url_prefix='/')
 
+
 @bp.route('/hello')
 def hello_pybo():
-    return 'hello, Pybo!'
+    return 'Hello, Pybo!'
+
 
 @bp.route('/')
 def index():
